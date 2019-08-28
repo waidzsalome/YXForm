@@ -1,0 +1,114 @@
+@charset "UTF-8"
+@function px2rem($px)
+  $rem: 375 * $px / 1080
+  @return ($rem / 37.5) + rem
+
+.header
+  width: 100%
+  height: px2rem(138)
+  text-align: center
+  p
+    display: inline
+    width: px2rem(192)
+    height: px2rem(67)
+    line-height: px2rem(67)
+    vertical-align: middle
+    margin: 0 auto
+    font-family: PingFangSC-Regular
+    font-size: px2rem(48)
+    color: #161616
+
+.logo
+  img
+    position: absolute
+    top: px2rem(49)
+    left: px2rem(109)
+    width: px2rem(24)
+    height: px2rem(41)
+
+.banner
+  width: 100%
+  height: px2rem(458)
+  opacity: 0.5
+  background-image: linear-gradient(-77deg, #AE8CEA 0%, #988FF1 40%, #6E96FC 100%)
+
+
+.middle
+  position: absolute
+  top: px2rem(255)
+  left: 0
+  right: 0
+  margin-left: auto
+  margin-right: auto
+  padding-top: px2rem(18)
+  width: px2rem(1032)
+  background: #FFFFFF
+  border: 1px solid rgba(140,149,234,0.30)
+  border-radius: px2rem(20)
+  font-family: PingFangSC-Regular
+  form
+    margin-bottom: px2rem(26)
+  ul
+    margin-bottom: px2rem(28)
+    height: px2rem(103)
+  .item
+    vertical-align: middle
+    line-height: px2rem(103)
+    width: 100%
+    font-size: 0
+    .label
+      display: inline-block
+      width: px2rem(144)
+      height: px2rem(50)
+      font-size: px2rem(36)
+      color: #161616
+      margin-left: px2rem(71-24)
+      margin-right: px2rem(76)
+    .input
+      box-sizing: border-box
+      width: px2rem(720)
+      height: px2rem(59)
+      //byhand
+      font-size: px2rem(30)
+      color: #979797
+      padding: px2rem(8) px2rem(20)
+      border: 1px solid
+      border-radius: px2rem(14)
+      border-image: linear-gradient(-77deg, #AE8CEA 0%, #988FF1 40%, #6E96FC 100%) 1
+  .bar
+    width: px2rem(480)
+    height: px2rem(17)
+    opacity: 0.75
+    background-image: linear-gradient(270deg, #AF8CEA 3%, #988FF1 41%, #6E96FC 73%, #6E96FC 97%)
+    border-radius: 0 px2rem(100) px2rem(100) px2rem(130)
+    margin-bottom: px2rem(-1)
+
+.buttonWrapper
+  font-size: px2rem(42)
+  text-align: center
+  p
+    display: inline
+    line-height: px2rem(90)
+    vertical-align: middle
+  .back
+    position: absolute
+    left: px2rem(63)
+    top: px2rem(1798)
+    width: px2rem(453)
+    height: px2rem(90)
+    opacity: 0.7
+    background-image: linear-gradient(-77deg, #AE8CEA 0%, #988FF1 40%, #6E96FC 100%)
+    border-radius: px2rem(25)
+  .next
+    position: absolute
+    right: px2rem(63)
+    top: px2rem(1798)
+    width: px2rem(453)
+    height: px2rem(90)
+    opacity: 0.7
+    background-image: linear-gradient(-77deg, #AE8CEA 0%, #988FF1 40%, #6E96FC 100%)
+    border-radius: px2rem(25)
+
+.test
+  position: absolute
+  top: 10px
